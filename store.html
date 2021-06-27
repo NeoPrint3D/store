@@ -34,12 +34,58 @@
                 </div>
             </div>
         </nav>
-        <div class="cards">
-            <div class="cards_image"><img src="assets/img/img64.jpg" /></div>
-            <div class="cards_title_bottom text-white">
-                Custom wristbands
-                <br />
-                $5
+        <div class="container-fluid justify-content-center">
+            <form class="bg-dark" id="form">
+                <div class="field">
+                    <label for="to_name">to_name</label>
+                    <input id="to_name" type="text" name="to_name" />
+                </div>
+                <div class="field">
+                    <label for="from_name">from_name</label>
+                    <input id="from_name" type="text" name="from_name" />
+                </div>
+                <div class="field">
+                    <label for="message">message</label>
+                    <input id="message" type="text" name="message" />
+                </div>
+                <div class="field">
+                    <label for="email">email</label>
+                    <input id="email" type="text" name="email" />
+                </div>
+                <div class="field">
+                    <label for="reply_to">reply_to</label>
+                    <input id="reply_to" type="text" name="reply_to" />
+                </div>
+                <div class="field">
+                    <label for="name">name</label>
+                    <input id="name" type="text" name="name" />
+                </div>
+                <div class="field">
+                    <label for="location">location</label>
+                    <input id="location" type="text" name="location" />
+                </div>
+                <input id="button" type="submit" value="Send Email" />
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+                <script type="text/javascript"></script>
+                <emailjs class="init" user_xLVlme8SmOAtUysXEckZd></emailjs>
+            </form>
+        </div>
+        <div class="row d-flew justify-content-center">
+            <div class="cards">
+                <div class="cards_image"><img src="assets/img/img64.jpg" /></div>
+                <div class="cards_title_bottom text-white">
+                    Custom wristbands
+                    <br />
+                    $5
+                </div>
+            </div>
+            <div class="cards">
+                <div class="cards_image"><img src="assets/img/img64.jpg" /></div>
+                <div class="cards_title_bottom text-white">
+                    Custom wristbands
+                    <br />
+                    $5
+                </div>
             </div>
         </div>
     </body>

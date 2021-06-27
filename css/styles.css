@@ -11020,8 +11020,13 @@ p {
   grid-gap: 15px;
 }
 
+.cards {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
 .cards .cards_image {
-  width: inherit;
+  width: 300px;
   height: 300px;
 }
 .cards .cards_image img {
@@ -11045,12 +11050,10 @@ p {
 }
 
 .title-white {
-  text-align: center;
   color: white;
 }
 
 .title-black {
-  text-align: center;
   color: black;
 }
 
