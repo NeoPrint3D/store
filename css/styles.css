@@ -11013,28 +11013,45 @@ p {
   }
 }
 
-.list-hours {
-  font-size: 0.9rem;
-}
-.list-hours .list-hours-item {
-  border-bottom: 1px solid rgba(185, 178, 169, 0.5);
-  padding-bottom: 0.25rem;
-  margin-bottom: 1rem;
-  font-style: italic;
-}
-.list-hours .list-hours-item.today {
-  font-weight: bold;
-  color: #b9b2a9;
-}
-@media (min-width: 992px) {
-  .list-hours {
-    width: 50%;
-    font-size: 1.1rem;
-  }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 5vw);
+  grid-gap: 15px;
 }
 
-.address strong {
-  font-size: 1.2rem;
+.cards .cards_image {
+  width: inherit;
+  height: 300px;
+}
+.cards .cards_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cards .cards_title_bottom {
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: -80px;
+  height: 80px;
+}
+.cards:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(255, 0, 0, 0.774), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+.title-white {
+  text-align: center;
+  color: white;
+}
+
+.title-black {
+  text-align: center;
+  color: black;
 }
 
 .field {
