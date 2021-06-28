@@ -11058,12 +11058,12 @@ p {
   color: white;
 }
 
-.title-white {
+.title-black {
   color: black;
 }
 
 @media all and (max-width: 500px) {
-  .card-list {
+  .cards-list {
     flex-direction: column;
   }
 }
