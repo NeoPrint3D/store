@@ -34,26 +34,53 @@
                 </div>
             </div>
         </nav>
-        <section class="page-section">
-            <div class="container">
-                <div class="product-item">
-                    <div class="product-item-title d-flex">
-                        <div class="bg-faded p-5 d-flex ms-auto rounded">
-                            <h2 class="section-heading mb-0">
-                                <span class="section-heading-upper">Phone Cases</span>
-                                <span class="section-heading-lower">Tailored to show off your unique personality</span>
-                            </h2>
-                        </div>
-                    </div>
-                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/products-01.jpg" alt="..." />
-                    <div class="product-item-description d-flex me-auto">
-                        <div class="bg-faded p-5 rounded"><p class="mb-0">Our phone cases are made from the polymer called TPU98A. This polymer is known to be strong and flexible to protect your phone from falls</p></div>
-                    </div>
+        <div class="container-fluid justify-content-center">
+            <form class="bg-dark" id="form">
+                <div class="field">
+                    <label for="name">name</label>
+                    <input id="name" type="text" name="name" />
+                </div>
+                <div class="field">
+                    <label for="product_name">product_name</label>
+                    <select id="product_name" type="text" name="product_name">
+                        <option value="Phone Case">Phone Case</option>
+                        <option value="Bracelet">Bracelet</option>
+                        <option value="Keychain">Keychain</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="reply_to">reply_to</label>
+                    <input id="reply_to" type="text" name="reply_to" />
+                </div>
+                <div class="field">
+                    <label for="location">location</label>
+                    <input id="location" type="text" name="location" />
+                </div>
+                <input id="button" type="submit" value="Send Email" />
+                <script src="js/forms.js"></script>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+                <script type="text/javascript">
+                    emailjs.init('user_xLVlme8SmOAtUysXEckZd');
+                </script>
+            </form>
+        </div>
+        <div class="row d-flew justify-content-center">
+            <div class="cards">
+                <div class="cards_image"><img src="assets/img/img64.jpg" /></div>
+                <div class="cards_title_bottom text-white">
+                    Custom wristbands
+                    <br />
+                    $5
                 </div>
             </div>
-        </section>
-        <footer class="footer text-faded text-center py-5">
-            <div class="container"><p class="m-0 small">Copyright &copy; Your Website 2021</p></div>
-        </footer>
+            <div class="cards">
+                <div class="cards_image"><img src="assets/img/img64.jpg" /></div>
+                <div class="cards_title_bottom text-white">
+                    Custom wristbands
+                    <br />
+                    $5
+                </div>
+            </div>
+        </div>
     </body>
 </html>

@@ -1,5 +1,5 @@
 /*!
-* Start Bootstrap - NeoPrint3D v7.0.1 (https://github.com/NeoPrint777/store)
+* Start Bootstrap - NeoPrint3D v7.0.1 (https://github.com/NeoPrint3D/store)
 * Copyright 2013-2021 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-business-casual/blob/master/LICENSE)
 */

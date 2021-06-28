@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-* Start Bootstrap - NeoPrint3D v7.0.1 (https://github.com/NeoPrint777/store)
+* Start Bootstrap - NeoPrint3D v7.0.1 (https://github.com/NeoPrint3D/store)
 * Copyright 2013-2021 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-business-casual/blob/master/LICENSE)
 */
@@ -11013,30 +11013,35 @@ p {
   }
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 5vw);
-  grid-gap: 15px;
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.cards {
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-}
-.cards .cards_image {
+.card {
+  margin: 20px auto;
   width: 300px;
   height: 300px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px;
 }
-.cards .cards_image img {
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+.card .card_image img {
   width: inherit;
   height: inherit;
   border-radius: 40px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.cards .cards_title_bottom {
+.card .card_title_bottom {
+  text-align: center;
   border-radius: 0px 0px 40px 40px;
   font-family: sans-serif;
   font-weight: bold;
@@ -11044,7 +11049,7 @@ p {
   margin-top: -80px;
   height: 80px;
 }
-.cards:hover {
+.card:hover {
   transform: scale(0.9, 0.9);
   box-shadow: 5px 5px 30px 15px rgba(255, 0, 0, 0.774), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
@@ -11053,10 +11058,11 @@ p {
   color: white;
 }
 
-.title-black {
-  color: black;
+@media all and (max-width: 500px) {
+  .card-list {
+    flex-direction: column;
+  }
 }
-
 .field {
   margin-bottom: 10px;
 }
