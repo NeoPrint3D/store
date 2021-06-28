@@ -11067,6 +11067,10 @@ p {
     flex-direction: column;
   }
 }
+.field-list {
+  width: 100px;
+}
+
 .field {
   margin-bottom: 10px;
 }
