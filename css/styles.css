@@ -11058,6 +11058,10 @@ p {
   color: white;
 }
 
+.title-white {
+  color: black;
+}
+
 @media all and (max-width: 500px) {
   .card-list {
     flex-direction: column;
