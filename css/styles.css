@@ -11067,32 +11067,22 @@ p {
     flex-direction: column;
   }
 }
-.field-list {
-  width: 100px;
+form {
+  padding: 40px 40px 20px !important;
+  background-color: #0de2e2b6;
 }
 
-.field {
-  margin-bottom: 10px;
+.mt32 {
+  margin-top: 32px;
 }
 
-.field label {
-  display: block;
-  font-size: 12px;
-  color: #777;
+.form-group label {
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Futura", "Courier New", monospace;
 }
 
-.field input {
-  display: block;
-  min-width: 250px;
-  line-height: 1.5;
-  font-size: 14px;
-}
-
-input[type=submit] {
-  display: block;
-  padding: 6px 30px;
-  font-size: 14px;
-  background-color: #4460AA;
-  color: #fff;
-  border: none;
+.form-group .btn {
+  margin-top: 15px;
 }

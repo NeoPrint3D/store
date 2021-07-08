@@ -22,7 +22,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="container">
                 <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">NEOPRINT3D</a>
-                <a class="icon" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                <a class="icon navbar-toggler" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto text-center">
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
@@ -43,34 +43,40 @@
                 }
             }
         </script>
-        <div class="container-fluid justify-content-center">
-            <form class="bg-dark" id="form">
-                <div class="field">
-                    <label for="name">name</label>
-                    <input id="name" type="text" name="name" />
+        <div class="container">
+            <form class="mt32 rounded border border-1 border-dark" id="form">
+                <button class="my-3"><a class="text-center text-dark rounded" href="store.html">back</a></button>
+                <h1 class="text-center bg-light rounded border border-3 border-dark text-bold">Checkout</h1>
+                <div class="form-group row">
+                    <label class="control-label" for="name">Name</label>
+                    <div class="col-sm-10"><input class="form-control" id="name" type="text" name="Name" /></div>
                 </div>
-                <div class="field">
-                    <label for="product_name">product_name</label>
-                    <select id="product_name" type="text" name="product_name">
-                        <option value="Phone Case">Phone Case</option>
-                        <option value="Bracelet">Bracelet</option>
-                        <option value="Keychain">Keychain</option>
-                    </select>
+                <div class="form-group row">
+                    <label class="control-label" for="reply_to">Email</label>
+                    <div class="col-sm-10"><input class="form-control" id="reply_to" type="text" name="Name" /></div>
                 </div>
-                <div class="field">
-                    <label for="reply_to">reply_to</label>
-                    <input id="reply_to" type="text" name="reply_to" />
+                <div class="form-group row">
+                    <label class="control-label" for="product_name">product_name</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" id="product_name" type="text" name="product_name">
+                            <option value="Phone Case">Phone Case</option>
+                            <option value="Bracelet">Bracelet</option>
+                            <option value="Keychain">Keychain</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="field">
-                    <label for="location">location</label>
-                    <input id="location" type="text" name="location" />
+                <div class="form-group row">
+                    <label class="control-label" for="location">Adress</label>
+                    <div class="col-sm-10"><input class="form-control" id="location" type="text" name="location" /></div>
                 </div>
-                <input id="button" type="submit" value="Send Email" />
-                <script src="js/forms.js"></script>
-                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-                <script type="text/javascript">
-                    emailjs.init('user_xLVlme8SmOAtUysXEckZd');
-                </script>
+                <div class="form-group row">
+                    <div class="btn btn-outline-dark bg-success text-white" id="button" type="submit" value="Send Email">Proceed</div>
+                    <script src="js/forms.js"></script>
+                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+                    <script type="text/javascript">
+                        emailjs.init('user_xLVlme8SmOAtUysXEckZd');
+                    </script>
+                </div>
             </form>
         </div>
     </body>
