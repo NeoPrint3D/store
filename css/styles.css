@@ -11069,7 +11069,7 @@ p {
 }
 form {
   padding: 40px 40px 20px !important;
-  background-color: #0de2e2b6;
+  background-color: #ffffffb6;
 }
 
 .mt32 {
@@ -11083,6 +11083,6 @@ form {
   font-family: "Futura", "Courier New", monospace;
 }
 
-.form-group .btn {
+.form-group input {
   margin-top: 15px;
 }

@@ -43,41 +43,59 @@
                 }
             }
         </script>
-        <div class="container">
-            <form class="mt32 rounded border border-1 border-dark" id="form">
-                <button class="my-3"><a class="text-center text-dark rounded" href="store.html">back</a></button>
-                <h1 class="text-center bg-light rounded border border-3 border-dark text-bold">Checkout</h1>
-                <div class="form-group row">
-                    <label class="control-label" for="name">Name</label>
-                    <div class="col-sm-10"><input class="form-control" id="name" type="text" name="Name" /></div>
-                </div>
-                <div class="form-group row">
-                    <label class="control-label" for="reply_to">Email</label>
-                    <div class="col-sm-10"><input class="form-control" id="reply_to" type="text" name="Name" /></div>
-                </div>
-                <div class="form-group row">
-                    <label class="control-label" for="product_name">product_name</label>
-                    <div class="col-sm-10">
-                        <select class="form-control" id="product_name" type="text" name="product_name">
-                            <option value="Phone Case">Phone Case</option>
-                            <option value="Bracelet">Bracelet</option>
-                            <option value="Keychain">Keychain</option>
-                        </select>
+        <div class="container p-5">
+            <div class="container">
+                <form class="mt32 rounded border border-1 border-dark" id="form">
+                    <button class="my-3"><a class="text-center text-dark rounded" href="store.html">back</a></button>
+                    <h1 class="text-center bg-light rounded border border-3 border-dark text-bold">Checkout</h1>
+                    <div class="form-group row">
+                        <label class="control-label" for="name">Name</label>
+                        <div class="col-sm-10"><input class="form-control" id="name" type="text" name="Name" required="" /></div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="control-label" for="reply_to">Email</label>
+                        <div class="col-sm-10"><input class="form-control" id="reply_to" type="text" name="reply_to" required="" /></div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="control-label" for="product_name">product_name</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="product_name" type="text" name="product_name">
+                                <option value="Phone Case">Phone Case</option>
+                                <option value="Bracelet">Bracelet</option>
+                                <option value="Keychain">Keychain</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="control-label" for="location">Adress</label>
+                        <div class="col-sm-10"><input class="form-control" id="location" type="text" name="location" required="" /></div>
+                    </div>
+                    <div class="form-group row-md-5">
+                        <input class="outline-dark bg-success text-white form-control" id="button" type="submit" value="Send Email" />
+                        <script src="js/forms.js"></script>
+                        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+                        <script type="text/javascript">
+                            emailjs.init('user_xLVlme8SmOAtUysXEckZd');
+                        </script>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="footer text-faded py-3 text-center">
+            <div class="container fluid">
+                <div class="row justify-content-center">
+                    <div class="col-sm-5">
+                        <p class="bold text-right">
+                            Made and ran by:
+                            <br />
+                            Drew Ronsman
+                        </p>
+                    </div>
+                    <div class="col-sm-2">
+                        <picture><img class="rounded" src="assets/img/small.jpg" /></picture>
                     </div>
                 </div>
-                <div class="form-group row">
-                    <label class="control-label" for="location">Adress</label>
-                    <div class="col-sm-10"><input class="form-control" id="location" type="text" name="location" /></div>
-                </div>
-                <div class="form-group row">
-                    <div class="btn btn-outline-dark bg-success text-white" id="button" type="submit" value="Send Email">Proceed</div>
-                    <script src="js/forms.js"></script>
-                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-                    <script type="text/javascript">
-                        emailjs.init('user_xLVlme8SmOAtUysXEckZd');
-                    </script>
-                </div>
-            </form>
-        </div>
+            </div>
+        </footer>
     </body>
 </html>
