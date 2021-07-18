@@ -16,9 +16,12 @@ document.getElementById('form')
    event.preventDefault();
 
    btn.value = 'Sending...';
-
-   const serviceID = 'service_yw4361j';
+   const encrypt='01110011 01100101 01110010 01110110 01101001 01100011 01100101 01011111 01111001 01110111 00110100 00110011 00110110 00110001 01101010'
+   const serviceID = encrypt.split(' ') //Split string in array of binary chars
+    .map(bin => String.fromCharCode(parseInt(bin, 2))) //Map every binary char to real char
+    .join('');
    const templateID = 'template_zv7jmdd';
+   console.log(serviceID)
    if(ValidateEmail(document.getElementById('reply_to'))){
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
