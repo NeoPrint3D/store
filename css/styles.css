@@ -10967,6 +10967,14 @@ p {
   background-color: rgba(187, 23, 23, 0.9);
 }
 
+.hs {
+  opacity: 0.5;
+}
+
+.ns {
+  opacity: 1;
+}
+
 .intro {
   position: relative;
 }
